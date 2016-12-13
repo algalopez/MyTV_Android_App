@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+    <ImageView
+        android:layout_width="@dimen/image_header"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription="@string/image_description"
+        android:id="@+id/header_show_image"
+        android:layout_gravity="center"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- TITLE -->
+    <TextView
+        android:text="@string/test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_show_title"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginBottom="5dp"/>
+
+
+    <!-- PLOT -->
+    <TextView
+        android:text="@string/test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_show_plot"
+        android:layout_marginBottom="5dp"/>
+
+
+    <!-- YEAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_year_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_year"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+
+    <!-- RATED -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/rated"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_rated_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_rated"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+
+
+    <!-- RELEASED -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="@string/released"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_released_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_released"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- RUNTIME -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/runtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_runtime_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_runtime"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- GENRE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_genre_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_genre"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- DIRECTOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/director"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_director_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_director"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- WRITER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/writer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_writer_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_writer"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- ACTORS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/actors"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_actors_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_actors"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- LANGUAGE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_language_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_language"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- COUNTRY -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_country_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_country"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- AWARDS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/awards"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_awards_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_awards"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- METASCORE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="@string/metascore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_metascore_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_metascore"/>
+    </LinearLayout>
+
+    <!-- IMDBRATING -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/imdbrating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_imdbrating_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_imdbrating"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- IMDBVOTES -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/imdbvotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_imdbvotes_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_imdbvotes"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- IMDBID -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="@string/imdbid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_imdbid_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_imdbid"/>
+    </LinearLayout>
+
+    <!-- TYPE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="@string/type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_type_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_type"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <!-- TOTALSEASONS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="@string/totalseasons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_totalseasons_tag"
+            android:textStyle="bold"
+            android:layout_gravity="top"/>
+        <TextView
+            android:text="@string/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_show_totalseasons"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

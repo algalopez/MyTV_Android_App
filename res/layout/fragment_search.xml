@@ -1,0 +1,25 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.SearchFragment"
+    android:orientation="vertical">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/fragment_search_progressbar"
+        android:background="@color/light_blue_500"
+        android:progress="100"
+        android:max="100"
+        android:progressDrawable="@drawable/custom_progressbar" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_list"
+        android:minHeight="?attr/listPreferredItemHeight"/>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- SETTINGS -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_settings"
+            android:background="@mipmap/ic_more_vert_white_36dp"
+            android:contentDescription="@string/image_description"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+
+        <!-- LOOK -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_search"
+            android:background="@mipmap/ic_search_white_36dp"
+            android:contentDescription="@string/image_description"
+            android:layout_toStartOf="@id/toolbar_settings"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+
+        <!-- FAV/UNFAV -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_favourite"
+            android:background="@mipmap/ic_favorite_white_36dp"
+            android:contentDescription="@string/image_description"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/toolbar_search"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"/>
+
+
+        <!-- REFRESH -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_refresh"
+            android:background="@mipmap/ic_refresh_white_36dp"
+            android:contentDescription="@string/image_description"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/toolbar_favourite"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"/>
+
+
+        <!-- TITLE -->
+        <TextView
+            android:text="@string/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_title"
+            android:textColor="@android:color/background_light"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/toolbar_refresh"
+            android:layout_alignParentStart="true"
+            android:textSize="26sp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

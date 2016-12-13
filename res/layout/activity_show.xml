@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.activity.ShowActivity">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_show_showfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.algalopez.mytv.presentation.activity.ShowActivity"
+        android:name="com.algalopez.mytv.presentation.fragment.ShowFragment"
+        tools:layout="@layout/fragment_show">
+
+    </fragment>
+
+</LinearLayout>

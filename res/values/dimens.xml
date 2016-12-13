@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="image_header">75dp</dimen>
+    <dimen name="image_data">75dp</dimen>
+    <dimen name="favourite_data">40dp</dimen>
+
+
+    <dimen name="item_search_image">75dp</dimen>
+    <dimen name="item_search_favourite">30dp</dimen>
+    <dimen name="item_season_episode_width">30dp</dimen>
+
+</resources>

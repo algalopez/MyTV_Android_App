@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/fragment_season_progressbar"
+        android:background="@color/light_blue_500"
+        android:progress="100"
+        android:max="100"
+        android:progressDrawable="@drawable/custom_progressbar" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/light_blue_100"
+        android:dividerHeight="1dp"
+        android:id="@+id/fragment_season_list"
+        android:minHeight="?attr/listPreferredItemHeight"/>
+
+</LinearLayout>
