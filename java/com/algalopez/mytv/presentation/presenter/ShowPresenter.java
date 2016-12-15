@@ -30,7 +30,7 @@ public class ShowPresenter implements LoaderManager.LoaderCallbacks<ResponseMode
 
     private final static String LOGTAG = "ShowPresenter";
 
-    private static final int SHOW_LOADER = 2;
+    public static final int SHOW_LOADER = 2;
 
     private static final String PARAM_SHOWID = "PARAM_SHOWID";
 

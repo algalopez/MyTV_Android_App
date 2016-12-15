@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_settings"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".presentation.activity.SettingsActivity">
 
-</RelativeLayout>
+    <include layout="@layout/toolbar_settings"/>
+
+    <TextView
+        android:text="@string/settings_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_radiogroup_title"
+        android:background="@color/light_blue_100"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:gravity="center"
+        android:textStyle="normal|bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_radiogroup"
+        android:layout_margin="16dp">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:text="@string/settings_order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_radiogroup_name"
+            android:layout_weight="1"
+            app:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:text="@string/settings_order_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_radiogroup_rating"
+            android:layout_weight="1"
+            app:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_history_title"
+        android:background="@color/light_blue_100"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:gravity="center"
+        android:textStyle="normal|bold"/>
+
+    <Button
+        android:text="@string/delete_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/settings_history_delete"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/WHITE" />
+</LinearLayout>

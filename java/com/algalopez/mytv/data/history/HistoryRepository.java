@@ -24,6 +24,9 @@ public class HistoryRepository implements IHistoryRepository{
         mDAO = new HistoryDbDAO(context);
     }
 
+    public HistoryRepository(HistoryDbDAO historyDbDAO){
+        this.mDAO = historyDbDAO;
+    }
 
     /**
      * Get an ArrayList of the performed searches

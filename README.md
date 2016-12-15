@@ -7,7 +7,6 @@ Search and save relevant information about your favourite tv shows and movies.
 <b>Author: </b>Alvaro Garcia Lopez (algalopez)
 </p>
 <h2>Structure:</h2>
-<br>
 <ul>
     <li><b>presentation</b></li>
     <ul>

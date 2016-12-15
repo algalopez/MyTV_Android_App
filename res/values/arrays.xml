@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="preference_order_name">order</string>
+    <string-array name="preference_order_values">
+        <item>name</item>
+        <item>rating</item>
+    </string-array>
+
+
+</resources>

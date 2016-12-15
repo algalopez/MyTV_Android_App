@@ -19,11 +19,14 @@
     <string name="action_search">Search</string>
 
 
+    <!-- ACTIVITY TOOLBAR TITLES -->
     <string name="activity_favourites">FAVOURITES</string>
     <string name="activity_show">SHOW</string>
     <string name="activity_season">SEASON</string>
     <string name="activity_episode">EPISODE</string>
     <string name="activity_search">SEARCH</string>
+    <string name="activity_settings">SETTINGS</string>
+    <string name="activity_about">ABOUT</string>
 
 
     <string name="title">Title</string>
@@ -61,6 +64,10 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
 
+    <!-- Toasts -->
+    <string name="toast_history_deleted">History Deleted</string>
+
+
     <!-- Dialogs -->
     <string name="dialog_title">Are you sure you want to&#8230; </string>
     <string name="dialog_remove_show">Remove this show from favourites?</string>
@@ -68,6 +75,20 @@
     <string name="dialog_update_show">Update this show?</string>
     <string name="dialog_update_season">Update this season?</string>
     <string name="dialog_update_episode">Update this episode?</string>
+    <string name="dialog_remove_History">Delete History?</string>
+
+
+
+    <!-- Settings -->
+    <string name="history">History</string>
+    <string name="delete_history1">Delete History</string>
+    <string name="delete_history">Delete</string>
+    <string name="settings_order">Order by</string>
+    <string name="settings_order_name">Name</string>
+    <string name="settings_order_rating">Rating</string>
+
+
+
 
 
 </resources>

@@ -21,6 +21,8 @@ import com.algalopez.mytv.domain.scheduler.IExecutor;
 import com.algalopez.mytv.domain.scheduler.ThreadExecutor;
 import com.algalopez.mytv.presentation.fragment.IFragment;
 
+import static com.algalopez.mytv.presentation.presenter.ShowPresenter.SHOW_LOADER;
+
 /**
  * AUTHOR:  Alvaro Garcia Lopez (algalopez)
  * DATE:    10/1/16
@@ -154,6 +156,7 @@ public class SeasonPresenter implements LoaderManager.LoaderCallbacks<ResponseMo
     @Override
     public void onSuccessReceived() {
 
+//        mLoaderManager.getLoader(SHOW_LOADER).onContentChanged();
         mView.showSuccess();
     }
 
