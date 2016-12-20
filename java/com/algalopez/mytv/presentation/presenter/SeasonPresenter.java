@@ -142,7 +142,7 @@ public class SeasonPresenter implements LoaderManager.LoaderCallbacks<ResponseMo
     @Override
     public void onProgressReceived(int actual, int total) {
 
-        mView.showLoading(actual/total);
+        mView.showLoading((actual*100)/total);
     }
 
 

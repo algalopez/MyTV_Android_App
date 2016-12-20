@@ -97,7 +97,7 @@ public class FavouritePresenter implements LoaderManager.LoaderCallbacks<Respons
     @Override
     public void onProgressReceived(int actual, int total) {
         //Log.d(LOGTAG, "onProgressReceived");
-        mView.showLoading(actual/total);
+        mView.showLoading((actual*100)/total);
     }
 
 

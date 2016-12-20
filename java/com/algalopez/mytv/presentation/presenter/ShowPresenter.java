@@ -141,8 +141,9 @@ public class ShowPresenter implements LoaderManager.LoaderCallbacks<ResponseMode
     @Override
     public void onProgressReceived(int actual, int total){
         //Log.d(LOGTAG, "Progress " + actual + "/" + total);
-        mView.showLoading(actual/total);
+        mView.showLoading((actual*100)/total);
     }
+
 
     @Override
     public void onErrorReceived(){
@@ -150,12 +151,14 @@ public class ShowPresenter implements LoaderManager.LoaderCallbacks<ResponseMode
         mView.showError("");
     }
 
+
     @Override
     public void onSuccessReceived(){
         //Log.d(LOGTAG, "Success");
         mView.showSuccess();
         mLoaderManager.getLoader(SHOW_LOADER).onContentChanged();
     }
+
 
     // ---------------------------------------------------------------------------------------------
     // LOADER CALLBACKS

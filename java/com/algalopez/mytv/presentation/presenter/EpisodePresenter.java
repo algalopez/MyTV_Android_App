@@ -146,17 +146,20 @@ public class EpisodePresenter implements LoaderManager.LoaderCallbacks<ResponseM
     // PROGRESS CALLBACKS
     // ---------------------------------------------------------------------------------------------
 
+
     @Override
     public void onProgressReceived(int actual, int total) {
         //Log.d("AAA ", actual + " / " + total);
-        mView.showLoading(actual/total);
+        mView.showLoading((actual*100)/total);
     }
+
 
     @Override
     public void onErrorReceived() {
 
         mView.showError("");
     }
+
 
     @Override
     public void onSuccessReceived() {
@@ -184,11 +187,13 @@ public class EpisodePresenter implements LoaderManager.LoaderCallbacks<ResponseM
         return new AsyncTaskLoaderLoader(mView.getViewContext(), interactor);
     }
 
+
     @Override
     public void onLoadFinished(Loader<ResponseModel> loader, ResponseModel data) {
 
         mView.showResponse(data);
     }
+
 
     @Override
     public void onLoaderReset(Loader<ResponseModel> loader) {

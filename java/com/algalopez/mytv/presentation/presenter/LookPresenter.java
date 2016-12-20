@@ -80,14 +80,16 @@ public class LookPresenter implements LoaderManager.LoaderCallbacks<ResponseMode
     @Override
     public void onProgressReceived(int actual, int total) {
 
-        mView.showLoading(actual/total);
+        mView.showLoading((actual*100)/total);
     }
+
 
     @Override
     public void onErrorReceived() {
 
         mView.showError("");
     }
+
 
     @Override
     public void onSuccessReceived() {
