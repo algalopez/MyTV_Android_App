@@ -6,6 +6,18 @@ Search and save relevant information about your favourite tv shows and movies.
 <p>
 <b>Author: </b>Alvaro Garcia Lopez (algalopez)
 </p>
+
+<p>
+<b>Notes: </b> The OMDB API search function is not available any more, so this project is discontinued.
+</p>
+
+
+<h2>Screenshots:</h2>
+<p align="center">
+<img src="https://github.com/algalopez/MyTV_Android_App/blob/master/Favourites.png" width="240">
+</p>
+
+
 <h2>Structure:</h2>
 <ul>
     <li><b>presentation</b></li>
